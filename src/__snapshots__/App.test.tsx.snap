@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should have the correct movie data url 1`] = `
+<body>
+  <div>
+    <div
+      class="App"
+    >
+      <header
+        class="App-header"
+      >
+        <img
+          alt="logo"
+          class="App-logo"
+          src="logo-light.svg"
+        />
+      </header>
+      <div
+        class="Instructions-Container"
+      >
+        <div>
+          Build a page that will do the following:
+        </div>
+        <div>
+          Make an api call to the API: http://localhost:3000/movies.json 
+        </div>
+        <div>
+          Make a grid of the movie cards so that≈ it shows a single column on mobile and flows responsively upto a maximum of 6 with a max width of 1400px
+        </div>
+        <img
+          alt="Sample card"
+          src="/card-image.png"
+        />
+        <div>
+          Show 5 rating stars for the rate: filled and unfilled. 
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="StarIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            />
+          </svg>
+           
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="StarBorderIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m22 9.24-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+            />
+          </svg>
+        </div>
+        <div>
+          You can install and use any 3rd party packages, material-ui is already installed
+        </div>
+        <div>
+          You can use search engines to find the answers you may need
+        </div>
+        <div>
+          Write tests for any components and pages you create.
+        </div>
+      </div>
+      <div>
+        Footer
+      </div>
+    </div>
+  </div>
+</body>
+`;

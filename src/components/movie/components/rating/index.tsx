@@ -1,27 +1,27 @@
 import { StarBorderIcon, StarIcon } from "../../../icons";
 
 const ZeroStarIcons = Array(5).fill(<StarBorderIcon />);
-const FiveStarIcons = Array(5).fill(<StarIcon />);
-const OneStarIcons = [...FiveStarIcons].fill(<StarBorderIcon />, 1);
-const TwoStarIcons = [...FiveStarIcons].fill(<StarBorderIcon />, 2);
-const ThreeStarIcons = [...FiveStarIcons].fill(<StarBorderIcon />, 3);
-const FourStarIcons = [...FiveStarIcons].fill(<StarBorderIcon />, 4);
+const FiveStarsIcons = Array(5).fill(<StarIcon />);
+const OneStarIcons = [...FiveStarsIcons].fill(<StarBorderIcon />, 1);
+const TwoStarsIcons = [...FiveStarsIcons].fill(<StarBorderIcon />, 2);
+const ThreeStarsIcons = [...FiveStarsIcons].fill(<StarBorderIcon />, 3);
+const FourStarsIcons = [...FiveStarsIcons].fill(<StarBorderIcon />, 4);
 
 const Ratings: React.FC<{ rating: number }> = ({ rating }) => {
   switch (rating) {
     case 0:
-      return <>{ZeroStarIcons}</>;
+      return <div data-cy="zero-star">{ZeroStarIcons}</div>;
     case 1:
-      return <>{OneStarIcons}</>;
+      return <div data-cy="one-star">{OneStarIcons}</div>;
     case 2:
-      return <>{TwoStarIcons}</>;
+      return <div data-cy="two-stars">{TwoStarsIcons}</div>;
     case 3:
-      return <>{ThreeStarIcons}</>;
+      return <div data-cy="three-stars">{ThreeStarsIcons}</div>;
     case 4:
-      return <>{FourStarIcons}</>;
+      return <div data-cy="four-stars">{FourStarsIcons}</div>;
     case 5:
     default:
-      return <>{FiveStarIcons}</>;
+      return <div data-cy="five-stars">{FiveStarsIcons}</div>;
   }
 };
 

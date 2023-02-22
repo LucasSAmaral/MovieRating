@@ -14,7 +14,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
   Ratings: MovieRating,
 }) => {
   return (
-    <MovieWrapper>
+    <MovieWrapper data-cy="movie-card">
       <MovieImage src={Poster} alt="" />
       <MovieTitle>{Title}</MovieTitle>
       <MovieRatingParagraph>

@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useQuery } from "react-query";
 import styled from "styled-components";
-import getRating, { RatingTypes } from "../../utils/rating";
-import Ratings from "./components/rating";
+import { RatingTypes } from "../../utils/rating";
+import MovieCard from "./components/MovieCard";
 
 type MoviesData = {
   data: { Title: string; Poster: string; Ratings: RatingTypes[] }[];
@@ -22,13 +22,7 @@ const Movies = () => {
   return (
     <MoviesContainer>
       {response.data.map((movie, index) => (
-        <div key={index}>
-          <MoviesImage src={movie.Poster} alt="" />
-          <MoviesTitle>{movie.Title}</MoviesTitle>
-          <MoviesRating>
-            Rating: <Ratings rating={getRating(movie.Ratings)} />
-          </MoviesRating>
-        </div>
+        <MovieCard key={index} {...movie} />
       ))}
     </MoviesContainer>
   );
@@ -41,20 +35,6 @@ const MoviesContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   gap: 2rem;
-`;
-
-const MoviesImage = styled.img`
-  width: 100%;
-  height: auto;
-`;
-
-const MoviesTitle = styled.p``;
-
-const MoviesRating = styled.p`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
 `;
 
 export default Movies;

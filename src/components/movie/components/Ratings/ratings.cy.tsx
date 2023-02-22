@@ -1,4 +1,4 @@
-import Ratings from "./components/rating";
+import Ratings from ".";
 import { mount } from "cypress/react";
 
 describe("<Ratings />", () => {

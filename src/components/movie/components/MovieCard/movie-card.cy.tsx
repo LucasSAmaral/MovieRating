@@ -25,7 +25,7 @@ describe("<MovieCard />", () => {
   beforeEach(() => {
     cy.viewport("iphone-5");
   });
-  it("should return five stars", () => {
+  it("should show movie card", () => {
     // see: https://on.cypress.io/mounting-react
     mount(<MovieCard {...MovieMock} />);
 

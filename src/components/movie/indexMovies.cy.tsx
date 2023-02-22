@@ -1,9 +1,10 @@
 import Ratings from "./components/rating";
+import { mount } from "cypress/react";
 
 describe("<Ratings />", () => {
   it("should return five stars", () => {
     // see: https://on.cypress.io/mounting-react
-    cy.mount(<Ratings rating={5} />);
+    mount(<Ratings rating={5} />);
 
     cy.get('[data-cy="five-stars"]').should(
       "contain.html",
